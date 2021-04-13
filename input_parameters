@@ -1,11 +1,11 @@
 # Size of domain for field plots
-leftbottom = [0.07, 0.0065] # Zoom for plot of the temperature field, position of left-bottom corner
-righttop = [0.075, 0.0075] # Zoom for plot of the temperature field, position of right-top corner
+leftbottom = [0.07, 0.0065] # Zoomed area for plot of the temperature and displacement field, position of left-bottom corner
+righttop = [0.075, 0.0075] # Zoomed area for plot of the temperature and displacement, position of right-top corner
 Nx = 200 # Number of divisions in x-direction
-Ny = 100 # Number of divisions in x-direction
+Ny = 100 # Number of divisions in y-direction
 
 #Timestep
-dt = Constant(0.002) # Initial timestep
+dt = Constant(0.01) # Initial timestep
 t_end = 20000.01 # Final time
 
 #Output directory
