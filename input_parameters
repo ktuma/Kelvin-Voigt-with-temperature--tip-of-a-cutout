@@ -1,0 +1,29 @@
+# Size of domain for field plots
+leftbottom = [0.07, 0.0065] # Zoom for plot of the temperature field, position of left-bottom corner
+righttop = [0.075, 0.0075] # Zoom for plot of the temperature field, position of right-top corner
+Nx = 200 # Number of divisions in x-direction
+Ny = 100 # Number of divisions in x-direction
+
+#Timestep
+dt = Constant(0.002) # Initial timestep
+t_end = 20000.01 # Final time
+
+#Output directory
+output_directory = 'results/linear-parameters-medium-viscosity-long-run' # Output directory
+os.makedirs(output_directory, exist_ok=True)
+
+#Material parameters
+rhoR = Constant(1101.0) # Reference density rho
+beta = Constant(2.0) # Exponent beta
+lambd = Constant(1E4) # Bulk viscosity lambda
+nu = Constant(1E4) # Shear viscosity nu
+kappa = Constant(0.317) # Thermal conductivity kappa
+cV = Constant(1591.0) # Specific heat capacity at constant volume
+thref = Constant(300) # Reference temperature
+
+mu1 = 1E6/thref*th # Elastic shear modulus mu1
+K = 1E9/thref*th # Elastic bulk modulus K
+dmu1 = 1E6/thref # First derivative of mu1 with respect to temperature th
+dK = 1E9/thref # First derivative of K with respect to temperature th
+d2mu1 = 0.0 # Second derivative of mu1 with respect to temperature th
+d2K = 0.0 # Second derivative of K with respect to temperature th
