@@ -1,7 +1,7 @@
 # Kelvin-Voigt with temperature -- tip of a cutout
-Finite element implementation in Fenics. This code was used for all simulations in a paper "Temperature field and heat generation at the tip of a cutout in a viscoelastic solid body undergoing loading" (https://arxiv.org/abs/2012.06204).
+Finite element implementation in FEniCS. This code was used for all simulations in our paper "Temperature field and heat generation at the tip of a cutout in a viscoelastic solid body undergoing loading" (https://arxiv.org/abs/2012.06204).
 
-The code is based on Fenics 2019.1.0 (https://fenicsproject.org/) using Python3 environment. It consists of two files:
+The code is based on FEniCS 2019.1.0 (https://fenicsproject.org/) using Python3 environment. It consists of two files:
 * kelvin-voigt_temperature.py: script itself
 * input_parameters: input parameters for the script (timestep, output directory, material parameters)
 
